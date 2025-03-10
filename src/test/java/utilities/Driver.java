@@ -37,12 +37,13 @@ public class Driver {
                     // hangi cihaz uzerinde calismak istiyorsak onun udid sini burada gireriz
                     .setSkipUnlock(true)     // eger cihazinin ekran kilidi otomatik olarak eger kapaliysa ve acilsin istiyorsan true
                     // .setLanguage("En");   // uygulamanin dili
-                    .setAutoGrantPermissions(true);// kullanici tarafindan verilmesi gereken izileri KABUL eder
-            //  .setNoReset(false) //
-            // .setFullReset(false);
-            // .withBrowserName("chrome")
-            // .setChromedriverExecutable("")
-            // cihazin her calistirilmadan once sifirlanip sifirlanmayacagi.Eger false ise sifirlanmaz
+                   // .setGpsEnabled(true) // GPS ozelligini etkinlestirerek konum tabanli testleri mumkun kilar.
+                    .setAutoGrantPermissions(true);// kullanici tarafindan verilmesi gereken izinleri KABUL eder
+
+            // .setNoReset(false) // Kullanicinin verileri sifirlanir ve cihaz baslatildiginda tum veriler silinir.
+            // .setFullReset(false) // Cihazin her calistirilmadan once sifirlanip sifirlanmayacagi.Eger false ise sifirlanmaz, mevcut veriler korunur.
+            // .withBrowserName("chrome") // Kullanilacak tarayiciyi belirtir (ornegin Chrome).
+            // .setChromedriverExecutable("") // Chromedriver'in dosyasinin yolu burada belirtilmeli.
 
 
             if (ConfigReader.getProperty("platformName").equals("Android")) {
