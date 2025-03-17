@@ -70,10 +70,12 @@ public class teknosaStep {
         ReusableMethods.ekranKaydirmaMethodu(530,2032,750,530,667);
         String birinciUrunFiyatiText=page.birinciUrunFiyati.getText(); // 4.529,00 TL
         String ikinciUrunFiyatiText= page.ikinciUrunFiyati.getText();
+
         birinciUrunFiyatiText=birinciUrunFiyatiText.replaceAll("\\D","");
         System.out.println(birinciUrunFiyatiText);
         ikinciUrunFiyatiText=ikinciUrunFiyatiText.replaceAll("\\D","");
         System.out.println(ikinciUrunFiyatiText);
+
         Assert.assertTrue(Integer.parseInt(birinciUrunFiyatiText)>Integer.parseInt(ikinciUrunFiyatiText));
     }
 
