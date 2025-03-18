@@ -3,9 +3,9 @@ package utilities;
 import java.awt.*;
 
 public class KoordinatDonusturucu {
-    // Orijinal ekran boyutları
-    private static final int ORIJINAL_EKRAN_GENISLIK = 1080;
-    private static final int ORIJINAL_EKRAN_YUKSEKLIK = 1920;
+    // Pixel 7 Pro'nun Orijinal ekran boyutları
+    private static final int ORIJINAL_EKRAN_GENISLIK = 1440;
+    private static final int ORIJINAL_EKRAN_YUKSEKLIK = 3120;
 
     // Yeni cihazın ekran boyutları
     private static int yeniEkranGenislik;

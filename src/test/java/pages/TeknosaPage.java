@@ -17,13 +17,13 @@ public class TeknosaPage {
     @AndroidFindBy(xpath = "//*[@text='Sonuçları Göster']")
     public WebElement sonuclariGosterButonu;
 
-    @AndroidFindBy(xpath = "//*[@bounds='[75,686][114,725]']")
+    @AndroidFindBy(xpath = "//*[@bounds='[100,893][152,946]']")
     public WebElement kutucuk;
 
-    @AndroidFindBy(xpath = "(//*[@class='android.widget.TextView'])[9]")
+    @AndroidFindBy(xpath = "(//*[@class='android.widget.TextView'])[14]")
     public WebElement birinciUrunFiyati;
 
-    @AndroidFindBy(xpath = "(//*[@class='android.widget.TextView'])[13]")
+    @AndroidFindBy(xpath = "(//*[@class='android.widget.TextView'])[20]")
     public WebElement ikinciUrunFiyati;
 
     @AndroidFindBy(xpath = "//*[@bounds='[27,762][514,1276]']")

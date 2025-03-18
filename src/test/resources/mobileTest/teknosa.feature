@@ -35,3 +35,9 @@ Feature: Kullanici mobil uygulamada filtreleme ve siralama islemlerini gercekles
     Given Uygulama baslatilir
     When Ilk ekran bolumunden "Atla" tiklanir
     Then Kullanici cekmek istedigi elementin "(//*[@class='android.view.View'])[3]" screenshot'ini alir
+
+    @ss
+  Scenario: kullanici ekran fotografi almak icin gorevi yerine getirir
+    Given Uygulama baslatilir
+    When Ilk ekran bolumunden "Atla" tiklanir
+    Then Kullanici cekmek istedigi elementin "Kategoriler" ekran fotografini ceker

@@ -56,6 +56,7 @@ public class teknosaStep {
     public void marka_bolumunden_bir_cihaz_filtrelemesi_yapilir(String cihazIsmi) {
         page.markaKutusu.sendKeys(cihazIsmi);
         page.kutucuk.click();
+        ReusableMethods.wait(2);
         page.sonuclariGosterButonu.click();
     }
 
@@ -115,5 +116,11 @@ public class teknosaStep {
     public void kullanici_cekmek_istedigi_elementin_screenshot_ini_alir(String elementXpath) throws IOException {
         ReusableMethods.getScreenshot("fullScreen");
         ReusableMethods.screenShotElement(elementXpath);
+    }
+
+    @Then("Kullanici cekmek istedigi elementin {string} ekran fotografini ceker")
+    public void kullanici_cekmek_istedigi_elementin_ekran_fotografini_ceker(String ssText) throws IOException,InterruptedException {
+        ReusableMethods.screenShotElement(ssText);
+        ReusableMethods.koordinatTiklamaMethodu(150,1500);
     }
 }
