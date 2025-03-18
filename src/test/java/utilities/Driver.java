@@ -30,9 +30,9 @@ public class Driver {
         if (appiumDriver == null) {
             UiAutomator2Options options=new UiAutomator2Options();
             options
-                       .setAppPackage("com.tmob.teknosa")
-                      .setAppActivity("com.tmob.teknosa.MainActivity")
-                   // .setApp("C:\\Users\\Cagla\\IdeaProjects\\appiumCucumberRealDevice\\Apps\\teknosa_____alisveris__teknoloji_7.2.6_apkpure.apk")
+                    //   .setAppPackage("com.tmob.teknosa")
+                    //  .setAppActivity("com.tmob.teknosa.MainActivity")
+                    .setApp("C:\\Users\\Cagla\\IdeaProjects\\appiumCucumberRealDevice\\Apps\\Teknosa – Alisveris, Teknoloji_7.3.6_APKPure.apk")
                     .setUdid("emulator-5554") // terminale "adb devices" yazarak cihazlarimizin tc kimlik nosuna ulasiriz kopyalayarak
                     // hangi cihaz uzerinde calismak istiyorsak onun udid sini burada gireriz
                     .setSkipUnlock(true)     // eger cihazinin ekran kilidi otomatik olarak eger kapaliysa ve acilsin istiyorsan true
