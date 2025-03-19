@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json",},
         features = "src/test/resources/mobileTest",
         glue = "stepDefinitions",
-        tags = "@ss",
+        tags = "@eptt",
         dryRun = false
         /*
         Eger dryRun true ise; Features da olusturmus oldugumuz steplerin stepdefinitions da olup olmadigini

@@ -22,7 +22,7 @@ public class Driver {
     public static AndroidDriver getAndroidDriver()  {
         URL appiumServerURL = null;
         try {
-            appiumServerURL = new URL("http://127.0.0.1:4723/wd/hub");
+            appiumServerURL = new URL("http://127.0.0.1:4723/");
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
@@ -30,9 +30,9 @@ public class Driver {
         if (appiumDriver == null) {
             UiAutomator2Options options=new UiAutomator2Options();
             options
-                    //   .setAppPackage("com.tmob.teknosa")
-                    //  .setAppActivity("com.tmob.teknosa.MainActivity")
-                    .setApp("C:\\Users\\Cagla\\IdeaProjects\\appiumCucumberRealDevice\\Apps\\Teknosa – Alisveris, Teknoloji_7.3.6_APKPure.apk")
+                     //  .setAppPackage("com.pttem.epttavm")
+                   //   .setAppActivity("com.pttem.epttavm.ui.activities.MainActivity")
+                    .setApp("C:\\Users\\Cagla\\IdeaProjects\\appiumCucumberRealDevice\\Apps\\pttavm_-_g__venli_al____veri___2.4.1gms_apkpure.apk")
                     .setUdid("emulator-5554") // terminale "adb devices" yazarak cihazlarimizin tc kimlik nosuna ulasiriz kopyalayarak
                     // hangi cihaz uzerinde calismak istiyorsak onun udid sini burada gireriz
                     .setSkipUnlock(true)     // eger cihazinin ekran kilidi otomatik olarak eger kapaliysa ve acilsin istiyorsan true
